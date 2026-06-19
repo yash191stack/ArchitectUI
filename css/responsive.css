@@ -1,9 +1,26 @@
-/* Tablet */
-
 @media(max-width:768px){
 
+    .menu-btn{
+        display:block;
+    }
+
+    header .container{
+        flex-wrap:wrap;
+    }
+
+    nav{
+        display:none;
+        width:100%;
+    }
+
+    nav.active{
+        display:block;
+    }
+
     nav ul{
-        gap:15px;
+        flex-direction:column;
+        align-items:center;
+        padding-top:20px;
     }
 
     .features{
@@ -13,22 +30,9 @@
     section{
         padding:60px 5%;
     }
-
 }
 
-/* Mobile */
-
 @media(max-width:576px){
-
-    header .container{
-        flex-direction:column;
-        gap:15px;
-    }
-
-    nav ul{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
 
     .hero h2{
         font-size:2rem;
@@ -41,5 +45,4 @@
     .card{
         padding:20px;
     }
-
 }
